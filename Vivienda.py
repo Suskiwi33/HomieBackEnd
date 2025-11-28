@@ -1,8 +1,8 @@
 class Vivienda:
-    def __init__(self, nombre, baclcony, bath_num, condition, floor, garage, garden, ground_size, house_type, lift, loc_city, loc_district, loc_neigh, m2_real, price, room_numbers, swimming_pool, terrace, unfurnished):
+    def __init__(self, nombre, balcony, bath_num, condition, floor, garage, garden, ground_size, house_type, lift, loc_city, loc_district, loc_neigh, m2_real, price, room_numbers, swimming_pool, terrace, unfurnished, IdUsuario):
         self.id_vivienda = None
         self.nombre = nombre
-        self.baclcony = baclcony
+        self.balcony = balcony
         self.bath_num = bath_num
         self.condition = condition
         self.floor = floor
@@ -20,12 +20,13 @@ class Vivienda:
         self.swimming_pool = swimming_pool
         self.terrace = terrace
         self.unfurnished = unfurnished
+        self.IdUsuario = IdUsuario
 
     def getIdVivienda(self):
         return self.id_vivienda
     def getNombre(self):
         return self.nombre
-    def getBaclcony(self):
+    def getBalcony(self):
         return self.baclcony
     def getBathNum(self):
         return self.bath_num
@@ -61,6 +62,8 @@ class Vivienda:
         return self.terrace
     def getUnfurnished(self):
         return self.unfurnished
+    def getIdUsuario(self):
+        return self.IdUsuario
     def setNombre(self, nuevo_nombre):
         self.nombre = nuevo_nombre
     def setPrice(self, nuevo_price):
@@ -85,7 +88,7 @@ class Vivienda:
         self.swimming_pool = nuevo_swimming_pool
     def setTerrace(self, nuevo_terrace):
         self.terrace = nuevo_terrace
-    def setBaclcony(self, nuevo_baclcony):
+    def setBalcony(self, nuevo_baclcony):
         self.baclcony = nuevo_baclcony
     def setBathNum(self, nuevo_bath_num):
         self.bath_num = nuevo_bath_num
@@ -99,4 +102,6 @@ class Vivienda:
         self.lift = nuevo_lift
     def setUnfurnished(self, nuevo_unfurnished):
         self.unfurnished = nuevo_unfurnished
+    def setIdUsuario(self, nuevo_IdUsuario):
+        self.IdUsuario = nuevo_IdUsuario
     
